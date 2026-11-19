@@ -1,6 +1,9 @@
-# Zen Browser — Digital Parasite Theme
+# Zen Browser — Digital Parasite Theme (square reference)
 
-A Zen Browser theme (Firefox-based) using the Digital Parasite palette. All UI elements are **square** (no rounded corners) for a sharp, angular cyberpunk look — inspired by system24's unrounding.
+A Zen Browser theme (Firefox-based) using the Digital Parasite palette. All UI elements are **square** (no rounded corners) for a sharp cyberpunk look — inspired by system24's unrounding.
+
+> This is the **square reference** variant. The rounded-corner variant of this setup uses Helium
+> (Chromium) or Zen's default rounding instead.
 
 ## Installation
 

@@ -21,8 +21,10 @@ The bar uses the `adaptive` style (islands). Adjust `image_path` in `config.yaml
 
 This repository also includes two additional YASB variants based on the Digital Parasite palette:
 
-- **[YASB-Akira](../YASB-Akira)** — i3WM-inspired, square corners, no rounding, bar at the top with a rose bottom border. Recommended for a sharp, angular look.
-- **[YASB-Shibumi](../YASB-Shibumi)** — Hyprland-inspired layout.
+- **[YASB-Akira](../YASB-Akira)** — i3WM-inspired, square corners, no rounding, bar at the top with a rose bottom border (reference variant).
+- **[YASB-Shibumi](../YASB-Shibumi)** — Hyprland-inspired layout (reference variant).
+
+The active theme in this repository is **Okinami** (above).
 
 Based on Okinami by MrDLingters (Darren Lingters), credited in the main repository README.
 

@@ -1,6 +1,11 @@
-# My Digital Parasite Setup
+# Digital Parasite Rounded Corner
 
-A collection of themes and configuration files for my Windows environment, built around the **Digital Parasite** color palette — the theme of **Capri**, the engram from *Cyberpunk: Edgerunners 2*.
+A collection of themes and configuration files for a Windows environment, built around the **Digital Parasite** color palette — the theme of **Capri**, the engram from *Cyberpunk: Edgerunners 2*.
+
+This is the **rounded-corner variant**: the same palette and components as the base
+[My Digital Parasite Setup](https://github.com/SakyuuGIT/My-Digital-Parasite-Setup) repository,
+with rounded corners everywhere (radii inspired by
+[YASB Okinami](https://github.com/MrDLingters/Okinami_YASB) and the Windows 11 corner radius).
 
 > **Note:** This repository brings together third-party themes and personal configuration files. Original authors retain ownership of their work, and source links and credits are included where relevant.
 
@@ -8,38 +13,41 @@ A collection of themes and configuration files for my Windows environment, built
 
 | Application | Included content | Details |
 | --- | --- | --- |
-| 🎨 [Discord](./Discord) | Digital Parasite Discord theme | CSS theme based on system24 by [refact0r](https://github.com/refact0r/system24) |
+| 🎨 [Discord](./Discord) | Digital Parasite Discord theme (rounded) | CSS theme based on system24 by [refact0r](https://github.com/refact0r/system24) |
 | 🎥 [OBS Studio](./OBS-Studio) | Digital Parasite OBS theme | `DigitalParasite.ovt` |
-| ⚡ [Windhawk](./Windhawk) | Eleven mod configurations | Files are stored directly in `Windhawk/` |
+| ⚡ [Windhawk](./Windhawk) | Ten mod configurations | Taskbar (bottom, rounded), window corner radius 16 |
 | 🐚 [Nilesoft Shell](./Nilesoft%20Shell) | Digital Parasite shell theme | `theme.nss` |
 | 🪟 [Komorebi](./Komorebi) | Tiling WM config + shortcuts | `komorebi.json` + `whkdrc` |
 | 💻 [Windows Terminal](./Powershell) | Windows Terminal settings and color scheme | `settings.json` |
-| 📟 [YASB (Okinami)](./YASB) | Okinami-based YASB bar | `config.yaml` + `styles.css` — [Source: MrDLingters/Okinami_YASB](https://github.com/MrDLingters/Okinami_YASB) |
-| 📟 [YASB (Akira)](./YASB-Akira) | i3WM-inspired YASB bar (square, no rounding) | `config.yaml` + `styles.css` — [Source: AmNweb/Akira_YASB](https://github.com/AmNweb/Akira_YASB) |
-| 📟 [YASB (Shibumi)](./YASB-Shibumi) | Hyprland-inspired YASB bar | `config.yaml` + `styles.css` — [Source: AmNweb/Shibumi_YASB](https://github.com/AmNweb/Shibumi_YASB) |
-| 🤖 [Hermes](./Hermes) | Hermes Agent skin | `digital-parasite.yaml` |
+| 📟 [YASB (Okinami)](./YASB) | Okinami-based YASB bar (active) | `config.yaml` + `styles.css` — [Source: MrDLingters/Okinami_YASB](https://github.com/MrDLingters/Okinami_YASB) |
+| 🤖 [Hermes](./Hermes) | Hermes Agent skin (rounded) | `digital-parasite-rounded.yaml` |
 | 🌐 [Chrome / Edge](./Chrome) | Browser theme (Manifest V3) | `manifest.json` |
-| 🦊 [Zen Browser](./Zen-Browser) | Zen Browser theme (userChrome.css) | `digital-parasite.css` |
+| 🦊 [Zen Browser](./Zen-Browser) | Zen Browser theme (square reference) | `digital-parasite.css` |
 | 🌙 [Dark Reader](./Dark-Reader) | Dark Reader settings (JSON) | `digital-parasite-darkreader.json` |
-| 📓 [Obsidian](./Obsidian) | Obsidian theme (Cyberpunk-based) | `Cyberpunk/theme.css` |
+| 📓 [Obsidian](./Obsidian) | Obsidian theme (Cyberpunk-based, rounded) | `DigitalParasiteRoundedCorner/theme.css` |
 | 🖼️ [Wallpaper](./Wallpaper) | Digital Parasite wallpapers | `Capri wallpaper.jpg` |
 | 🎯 [Kovaak's](./Kovaak) | Kovaak's aim trainer theme | `! Sakyuu - Digital Parasite.json` |
-| 🎮 [Steam](./Steam) | Steam client theme (Millennium) | `Steam.css` |
+| 🎮 [Steam](./Steam) | Steam client theme (Millennium, rounded) | `Steam.css` |
 | 🧑‍💻 [Visual Studio Code](./VS-code) | VS Code color customizations | `settings.json` |
 
-## Preview
+## Rounded corner reference
 
-🎥 **Video showcase:** [Digital Parasite — Windows 11 Ricing (Cyberpunk Capri Theme)](https://youtu.be/f5J7ooDcHkk)
-
-[![Digital Parasite - Windows 11 Ricing](https://i.ytimg.com/vi/f5J7ooDcHkk/maxresdefault.jpg)](https://youtu.be/f5J7ooDcHkk)
+| Element | Radius |
+| --- | --- |
+| Windows 11 windows (Windhawk) | 16px (small 6px) |
+| Hermes Desktop | 6px main / 5px medium / 2px small |
+| Obsidian | 6 / 10 / 14 / 20 px |
+| Discord | system24 default (rounded panels, round avatars) |
+| Steam | Simple Dark radii (4 / 10 / 20 / 35 / 40 / 50 / 80 px) |
+| YASB Okinami | 14 / 10 / 4 px |
 
 ## About Digital Parasite
 
-Digital Parasite is a dark, high-contrast color palette inspired by Capri, the engram from *Cyberpunk: Edgerunners 2*. The name comes from **"Digital Parasite"**, the theme song of Capri composed by Tsuneo Imahori — a track built from processed vocal fragments that perfectly captures the angular, energetic, and slightly unsettling aesthetic of the character.
+Digital Parasite is a dark, high-contrast color palette inspired by Capri, the engram from *Cyberpunk: Edgerunners 2*. The name comes from **"Digital Parasite"**, the theme song of Capri composed by Tsuneo Imahori.
 
 The palette is built around **neon pink** and **neon green** on a deep dark background, with cyan and yellow as accents.
 
-The goal is to keep colors and overall appearance consistent across supported applications. Individual themes may use their own layout, typography, and customization options. The aesthetic is angular, animated, and playful — a theme that *moves*.
+The goal is to keep colors and overall appearance consistent across supported applications. Individual themes may use their own layout, typography, and customization options.
 
 ## Getting started
 
@@ -57,15 +65,13 @@ Some themes load stylesheets or other resources from their upstream projects, so
 - **Nilesoft Shell:** [Official website](https://www.nilesoft.org/)
 - **Windows Terminal:** [Official website](https://aka.ms/terminal)
 - **YASB / Okinami:** [MrDLingters/Okinami_YASB](https://github.com/MrDLingters/Okinami_YASB) by Darren Lingters — bar structure and color-scheme switching.
-- **YASB / Akira:** [AmNweb/Akira_YASB](https://github.com/AmNweb/Akira_YASB) — i3WM-inspired layout.
-- **YASB / Shibumi:** [AmNweb/Shibumi_YASB](https://github.com/AmNweb/Shibumi_YASB) — Hyprland-inspired layout.
 - **Hermes Agent:** [Official website](https://hermes-agent.nousresearch.com/docs)
 - **Obsidian Cyberpunk theme:** [nxxxsooo/obsidian-cyberpunk-theme](https://github.com/nxxxsooo/obsidian-cyberpunk-theme)
 - **Chrome / Edge:** Browser theme via Manifest V3 theme API.
-- **Zen Browser:** Browser theme via userChrome.css (square UI, Digital Parasite palette).
+- **Zen Browser:** Browser theme via userChrome.css.
 - **Visual Studio Code:** [Official website](https://code.visualstudio.com/)
-- **Steam:** Steam client theme (Millennium-based, recolored with Digital Parasite palette) — based on [Simple Dark.](https://github.com/shdwmtr/simply-dark) by ShadowMonster, powered by [Millennium](https://github.com/SteamClientHomebrew/Millennium)
-- **Kovaak's:** Aim trainer theme (based on the user's existing themes, recolored with Digital Parasite palette)
+- **Steam:** Steam client theme (Millennium-based) — based on [Simple Dark.](https://github.com/shdwmtr/simply-dark) by ShadowMonster, powered by [Millennium](https://github.com/SteamClientHomebrew/Millennium)
+- **Kovaak's:** Aim trainer theme (recolored with the Digital Parasite palette)
 
 ## Disclaimer
 

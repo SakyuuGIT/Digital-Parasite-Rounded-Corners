@@ -1,6 +1,6 @@
-# Visual Studio Code — Digital Parasite
+# Visual Studio Code — Digital Parasite Rounded Corner
 
-Instructions for using the Digital Parasite color theme in Visual Studio Code.
+Instructions for using the Digital Parasite color theme in Visual Studio Code (rounded variant).
 
 ## Installation (manual)
 
@@ -25,7 +25,7 @@ Alternatively, add the following to your `settings.json`:
 
 ## Notes
 
-The theme is angular, animated, and playful — errors pulse instead of staying static.
+The theme is animated and playful — errors pulse instead of staying static.
 
 ---
 
