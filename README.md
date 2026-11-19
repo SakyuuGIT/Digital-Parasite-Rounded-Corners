@@ -29,6 +29,7 @@ with rounded corners everywhere (radii inspired by
 | 🎯 [Kovaak's](./Kovaak) | Kovaak's aim trainer theme | `! Sakyuu - Digital Parasite.json` |
 | 🎮 [Steam](./Steam) | Steam client theme (Millennium, rounded) | `Steam.css` |
 | 🧑‍💻 [Visual Studio Code](./VS-code) | VS Code color customizations | `settings.json` |
+| 🔤 [Font Wizard](./Font-Wizard) | System font manager + JetBrains Mono Nerd Font | `fonts/` |
 
 ## Rounded corner reference
 
@@ -70,6 +71,8 @@ Some themes load stylesheets or other resources from their upstream projects, so
 - **Chrome / Edge:** Browser theme via Manifest V3 theme API.
 - **Zen Browser:** Browser theme via userChrome.css.
 - **Visual Studio Code:** [Official website](https://code.visualstudio.com/)
+- **Font Wizard:** [karnyadavdev/FontWizard](https://github.com/karnyadavdev/FontWizard) — system font manager
+- **JetBrains Mono Nerd Font:** [JetBrains](https://github.com/JetBrains/JetBrainsMono) + [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 - **Steam:** Steam client theme (Millennium-based) — based on [Simple Dark.](https://github.com/shdwmtr/simply-dark) by ShadowMonster, powered by [Millennium](https://github.com/SteamClientHomebrew/Millennium)
 - **Kovaak's:** Aim trainer theme (recolored with the Digital Parasite palette)
 
