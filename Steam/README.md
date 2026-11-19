@@ -1,6 +1,6 @@
-# Steam Digital Parasite Theme (Rounded)
+# Steam Digital Parasite Rounded Corner
 
-A **Millennium** theme for the Steam client, inspired by **Capri** from *Cyberpunk: Edgerunners 2*. Neon rose & green on a deep dark background — a cyberpunk aesthetic for your Steam library. **Rounded variant.**
+A **Millennium** theme for the Steam client, inspired by **Capri** from *Cyberpunk: Edgerunners 2*. Neon rose & green on a deep dark background — a cyberpunk aesthetic for your Steam library. **Rounded corner variant.**
 
 ![Digital Parasite Theme](screenshot.png)
 
@@ -30,12 +30,12 @@ The square variant sets `--border35/4/5/8/50` to `0px`; this rounded variant res
 
 1. Install **[Millennium](https://steambrew.app/)** (the Steam modding framework).
 2. Close Steam completely.
-3. Copy the contents of the `Steam` folder into a new folder named `DigitalParasite-Rounded` in your Steam installation:
+3. Copy the contents of the `Steam` folder into a new folder named `DigitalParasiteRoundedCorner` in your Steam installation:
    ```
-   Steam/millennium/themes/DigitalParasite-Rounded/
+   Steam/millennium/themes/DigitalParasiteRoundedCorner/
    ```
 4. Restart Steam.
-5. Go to **Steam → Millennium → Themes** and select **Digital Parasite Rounded**.
+5. Go to **Steam → Millennium → Themes** and select **Digital Parasite Rounded Corner**.
 6. Reload Steam when prompted.
 
 ### Alternative (via Theme ID)

@@ -1,20 +1,20 @@
-# Obsidian — Digital Parasite (Cyberpunk Rounded)
+# Obsidian — Digital Parasite Rounded Corner
 
-An [Obsidian](https://obsidian.md/) theme based on [Cyberpunk](https://github.com/nxxxsooo/obsidian-cyberpunk-theme) by nxxxsooo, recolored with the Digital Parasite palette — **rounded variant**.
+An [Obsidian](https://obsidian.md/) theme based on [Cyberpunk](https://github.com/nxxxsooo/obsidian-cyberpunk-theme) by nxxxsooo, recolored with the Digital Parasite palette — **rounded corner variant**.
 
 ## Installation
 
-1. Copy the `Cyberpunk-Rounded` folder into your vault's `.obsidian/themes/` directory.
+1. Copy the `DigitalParasiteRoundedCorner` folder into your vault's `.obsidian/themes/` directory.
 2. Open Obsidian → **Settings → Appearance → Themes**.
-3. Select **Cyberpunk Rounded** from the theme dropdown.
+3. Select **Digital Parasite Rounded Corner** from the theme dropdown.
 4. Set the accent color to rose in **Settings → Appearance → Accent color**.
 
 ## Files
 
 | Folder | Description |
 | --- | --- |
-| `Cyberpunk-Rounded/` | Rounded variant (radius 6 / 10 / 14 / 20 px) — active in both vaults |
-| `Cyberpunk/` | Square variant (kept for reference) |
+| `DigitalParasiteRoundedCorner/` | Rounded corner variant (radius 6 / 10 / 14 / 20 px) — active in both vaults |
+| `Cyberpunk/` | Base theme (kept for reference) |
 
 ## Features
 
