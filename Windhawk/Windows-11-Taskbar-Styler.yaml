@@ -22,7 +22,7 @@ controlStyles:
       - BorderBrush@MultiWindowActive=#ff2d7a
       - BorderBrush@MultiWindowPointerOver=#ff2d7a
       - BorderThickness=1
-      - CornerRadius=5
+      - CornerRadius=10
       - Margin@MultiWindowActive=0
   - target: Taskbar.TaskListButtonPanel@CommonStates > Border#BackgroundElement
     styles:
@@ -38,7 +38,7 @@ controlStyles:
       - BorderBrush@InactivePointerOver=#d2ff2d7a
       - BorderBrush@InactivePressed=#d2ffd93d
       - BorderThickness=1
-      - CornerRadius=5
+      - CornerRadius=10
   - target: Grid#SystemTrayFrameGrid
     styles:
       - 'Background=\ #0a0a12'
@@ -87,7 +87,7 @@ controlStyles:
     styles:
       - Fill=#ff2d7a
       - Height=1
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=Top
   - target: Taskbar.SearchBoxButton#SearchBoxButton > Taskbar.TaskListButtonPanel@CommonStates > Border#BackgroundElement
     styles:
       - Background@ActiveNormal_SearchIcon=#26ff2d7a
