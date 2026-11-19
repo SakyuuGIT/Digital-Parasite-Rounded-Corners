@@ -2,14 +2,12 @@
 # For more information, visit https://github.com/amnweb/yasb/wiki
 watch_stylesheet: true
 watch_config: true
-system_colors: true
 debug: false
 update_check: true
 bars:
   primary-bar:
     enabled: true
-    style: "adaptive" #style_adaptive_exclude: ["wallpapers", "systray"]
-    # style_adaptive_exclude: ["wallpapers"]
+    style: "adaptive"
     screens:
     - '*'
     class_name: yasb-bar
@@ -27,7 +25,7 @@ bars:
       windows_app_bar: true
     dimensions:
       width: 100%
-      height: 35
+      height: 36
     padding:
       top: 0
       left: 0
@@ -37,33 +35,36 @@ bars:
       left:
       - home
       - lines
-      - komorebi_active_layout
-      - lines
       - komorebi_workspaces
       - lines
-      - quick_launch
+      - komorebi_active_layout
+      - lines
       - active_window
       center:
       - clock
+      right:
       - audio_visualizer
       - media
-      right:
-      - systray
+      #- lines
+      #- cpu
       #- lines
       #- memory
-      #- cpu
-      - lines
-      - wallpapers
       - lines
       - volume
       - lines
-      - notifications
       - language
+      - lines
+      - quick_launch
+      - lines
+      - systray
+      - wallpapers
+      - notifications
       - control_center
 widgets:
   home:
     type: yasb.home.HomeWidget
     options:
+      direction: up
       label: "<span>家</span>"
       menu_list:
       - title: User Home
@@ -74,8 +75,6 @@ widgets:
         path: ~\Documents
       - title: Pictures
         path: ~\Pictures
-      - title: Wallpapers
-        path: D:\OneDrive\Pictures\Wallpapers\Themes
       system_menu: true
       power_menu: false
       blur: false
@@ -83,19 +82,18 @@ widgets:
       round_corners_type: normal
       border_color: System
       alignment: left
-      offset_left: -5
+      offset_left: -12
   clock:
     type: yasb.clock.ClockWidget
     options:
-      label: '{%a, %d %b %H:%M}<span>{alarm}</span>'
-      label_alt: '{%a, %d %b %H:%M}'
+      label: '{%Y/%m/%d %H:%M}<span>{alarm}</span>'
+      label_alt: '{%Y/%m/%d %H:%M}'
       timezones: []
       calendar:
         blur: false
         round_corners: true
         alignment: center
-        direction: down
-        offset_left: 0
+        direction: up
         extended: false
         show_years: true
         show_holidays: false
@@ -123,18 +121,18 @@ widgets:
         round_corners_type: normal
         border_color: system
         alignment: right
-        direction: down
+        direction: up
         show_apps: true
         show_app_labels: true
         show_app_icons: true
         show_apps_expanded: false
         app_icons:
-          toggle_down: "\uf107"
-          toggle_up: "\uf106"
+          toggle_down: "\uf106"
+          toggle_up: "\uf107"
   notifications:
     type: yasb.notifications.NotificationsWidget
     options:
-      label: "<span>\udb80\udc9e</span>"
+      label: "<span>\ueb9a</span>"
       label_alt: '{count} notifications'
       hide_empty: true
       tooltip: false
@@ -145,12 +143,13 @@ widgets:
   power_menu:
     type: yasb.power_menu.PowerMenuWidget
     options:
-      label: "<span>\udb80\udc09</span>"
+      label: "<span>\ueaf8</span>"
       uptime: true
       show_user: true
       menu_style: popup
       popup:
         blur: false
+        direction: up
         round_corners: true
         round_corners_type: normal
         border_color: System
@@ -216,7 +215,7 @@ widgets:
       label_default_name: ""
       label_zero_index: false
       hide_empty_workspaces: true
-      hide_if_offline: true
+      hide_if_offline: false
       toggle_workspace_layer:
         enabled: false
         tiling_label: "Tiling"
@@ -260,7 +259,7 @@ widgets:
         round_corners_type: "normal"
         border_color: "System"
         alignment: "left"
-        direction: "down"
+        direction: "up"
         offset_top: 6
         offset_left: 0
         show_layout_icons: true
@@ -268,8 +267,8 @@ widgets:
     type: "yasb.systray.SystrayWidget"
     options:
       class_name: "systray"
-      label_collapsed: "\uf107"
-      label_expanded: "\uf106"
+      label_collapsed: "\uf106"
+      label_expanded: "\uf107"
       label_position: "left" # Can be "left" or "right"
       icon_size: 16 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
@@ -290,23 +289,23 @@ widgets:
         round_corners_type: "normal"
         border_color: None
         alignment: "center"
-        direction: "down"
+        direction: "up"
         offset_top: 6
         offset_left: 0
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
-      label: "<span>\udb83\udc8d</span>"
+      label: "<span>\udb83\ude09</span>"
       change_automatically: false
     # Example path to folder with images. Can be a single string or a list of strings.
       image_path: "D:/Images/Wallpaper YASB/Digital Parasite"
       engine:
         enabled: true
-        animation: "slide_top" # circle/slide_top/diamond/split
+        animation: "split" # circle/slide_top/diamond/split
       gallery:
         image_width: 520
-        image_corner_radius: 6
-        type: "magnified" # default/magnified/strip/slide - see "Gallery types" below
+        image_corner_radius: 0
+        type: "strip" # default/magnified/strip/slide - see "Gallery types" below
         orientation: "landscape" # landscape/portrait
         accent_color: "auto"
       callbacks:
@@ -345,21 +344,21 @@ widgets:
         pause: "\ue769"
       media_menu:
         blur: false
-        round_corners: true
+        round_corners: false
         round_corners_type: "normal"
         border_color: "system"
-        alignment: "center"
-        direction: "down"
+        alignment: "right"
+        direction: "up"
         offset_top: 6
-        offset_left: -95
-        thumbnail_corner_radius: 8
+        offset_left: 0
+        thumbnail_corner_radius: 0
         thumbnail_size: 120
         max_title_size: 60
         max_artist_size: 50
         show_source: true
       media_menu_icons:
-        play: "\uf04b"
-        pause: "\uf04c"
+        play: "\udb81\udc0a"
+        pause: "\udb80\udfe4"
         prev_track: "\udb81\udcae"
         next_track: "\udb81\udcad"
       scrolling_label:
@@ -392,7 +391,7 @@ widgets:
         round_corners_type: "normal"
         border_color: "system"
         alignment: "right"
-        direction: "down"
+        direction: "up"
         offset_top: 6
         offset_left: 0
         show_layout_icon: true
@@ -419,6 +418,40 @@ widgets:
         - keys: "alt+space"
           action: "toggle_quick_launch"
           screen: "primary"
+  lines:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\u007c"
+      label_alt: "\u007c"
+      class_name: "separator-widget"
+      callbacks:
+        on_left: "do_nothing"
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      icon_size: 0
+      tooltip: true
+      show_only_visible: true
+      strict_filtering: true
+      monitor_exclusive: true
+      animation:
+        enabled: true
+        duration: 200
+      preview:
+        enabled: true
+        width: 240
+        delay: 400
+        padding: 8
+        margin: 8
+      title_label:
+        enabled: true
+        show: "always"
+        min_length: 10
+        max_length: 30
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
@@ -445,6 +478,7 @@ widgets:
         on_right: "toggle_menu"
       menu:
         enabled: true
+        direction: "up"
         show_graph: true
         show_graph_grid: true
         graph_history_size: 60
@@ -476,6 +510,7 @@ widgets:
         - "\u2588" # 80%+
       menu:
         enabled: true
+        direction: "up"
         show_graph: true
         show_graph_grid: true
         graph_history_size: 60
@@ -508,13 +543,13 @@ widgets:
         - "media"
       popup:
         alignment: "right"
-        direction: "down"
+        direction: "up"
         border_color: none
         round_corners: false
         blur: false
         round_corners_type: normal
-        offset_top: 9
-        offset_left: 5
+        offset_top: 8
+        offset_left: 6
       sections:
         system_controls:
           profile_image_size: 28
@@ -580,12 +615,12 @@ widgets:
   audio_visualizer:
     type: "yasb.audio_visualizer.AudioVisualizerWidget"
     options:
-      style: bars
+      style: dots
       height: 12
       smoothness: 80
-      sensitivity: 50
+      sensitivity: 70
       auto_gain: true
-      framerate: 60
+      framerate: 12
       freq_min: 500
       freq_max: 12000
       hide_idle: true
@@ -593,7 +628,7 @@ widgets:
       channels: stereo
       mono_option: average
       reverse: false
-      mirror: true
+      mirror: false
       bars:
         count: 10
         width: 2
@@ -601,6 +636,6 @@ widgets:
       waves:
         width: 80
       dots:
-        count: 30
-        size: 1
+        count: 16
+        size: 2
         gap: 2
