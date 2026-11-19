@@ -67,15 +67,15 @@ customCSS: |
   :root {
     --dt-primary-solid: #ff2d7a;
     --dt-accent: #39ff88;
-    --radius-scalar: 1.75;
-    --radius-xs: 4px;
-    --radius-sm: 8px;
-    --radius-md: 10px;
-    --radius-lg: 14px;
-    --radius-xl: 14px;
-    --radius-2xl: 16px;
-    --radius-3xl: 20px;
-    --radius-4xl: 20px;
+    --radius-scalar: 1.25;
+    --radius-xs: 3px;
+    --radius-sm: 5px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+    --radius-xl: 10px;
+    --radius-2xl: 12px;
+    --radius-3xl: 12px;
+    --radius-4xl: 14px;
   }
   .hermes-chat { background: #0a0a12; color: #e8e6f0; }
   .hermes-sidebar { background: #12121f; border-color: #2a2a3f; }
