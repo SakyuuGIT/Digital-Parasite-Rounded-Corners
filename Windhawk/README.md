@@ -28,6 +28,7 @@
 | 8 | `Windows-11-Notification-Center-Styler.yaml` | Windows 11 Notification Center Styler | Dark panel with rose accents |
 | 9 | `Windows-11-Start-Menu-Styler.yaml` | Windows 11 Start Menu Styler | Dark menu with rose hover highlight and cyan border |
 | 10 | `Windows-11-Taskbar-Styler.yaml` | Windows 11 Taskbar Styler | Dark taskbar, rounded buttons, rose top border |
+| 11 | `Taskbar-Labels.yaml` | Taskbar Labels for Windows 11 | Labels on taskbar buttons, width 160 |
 
 ## Not used in this variant
 
