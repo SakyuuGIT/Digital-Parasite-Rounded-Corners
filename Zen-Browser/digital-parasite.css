@@ -4,6 +4,7 @@
    on deep dark background #0a0a12 */
 
 * {
+  --dp-radius:      12px;
   --base:           #0a0a12;
   --surface:        #12121f;
   --overlay:        #1a1a2e;
@@ -75,45 +76,45 @@
   --button-hover-bgcolor: var(--overlay) !important;
   --button-active-bgcolor: var(--highlightMed) !important;
 
-  /* All square — no rounding */
-  --border-radius-small: 0px !important;
-  --border-radius-medium: 0px !important;
-  --border-radius-large: 0px !important;
-  --border-radius-extra-large: 0px !important;
+  /* Rounded corners */
+  --border-radius-small: var(--dp-radius) !important;
+  --border-radius-medium: var(--dp-radius) !important;
+  --border-radius-large: var(--dp-radius) !important;
+  --border-radius-extra-large: var(--dp-radius) !important;
 }
 
-/* Square essentials (override squircle/rounded selected background) */
+/* Rounded essentials */
 .tabbrowser-tab[zen-essential="true"] {
-  corner-shape: none !important;
+  corner-shape: round !important;
   --zen-essential-bg-margin: 0px !important;
   --zen-essential-tab-selected-bg: var(--surface) !important;
   --zen-essential-tab-selected-bg-hover: var(--overlay) !important;
 }
 
 .tabbrowser-tab[zen-essential="true"] .tab-background {
-  border-radius: 0 !important;
-  corner-shape: none !important;
+  border-radius: var(--dp-radius) !important;
+  corner-shape: round !important;
   background: var(--surface) !important;
 }
 
 .tabbrowser-tab[zen-essential="true"][visuallyselected] .tab-background {
-  border-radius: 0 !important;
-  corner-shape: none !important;
+  border-radius: var(--dp-radius) !important;
+  corner-shape: round !important;
 }
 
 .tabbrowser-tab[zen-essential="true"][visuallyselected] .tab-background::before {
-  border-radius: 0 !important;
-  corner-shape: none !important;
+  border-radius: var(--dp-radius) !important;
+  corner-shape: round !important;
 }
 
 .tabbrowser-tab[zen-essential="true"][visuallyselected] .tab-background::after {
-  border-radius: 0 !important;
-  corner-shape: none !important;
+  border-radius: var(--dp-radius) !important;
+  corner-shape: round !important;
 }
 
-/* Square everything */
+/* Rounded corners everywhere */
 * {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 .tabbrowser-tab,
@@ -138,7 +139,7 @@ menuitem,
 .zen-workspace-indicator,
 #zen-sidebar-top-buttons button,
 .zen-sidebar-footer button {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 /* Tab styling */
@@ -163,7 +164,7 @@ menuitem,
 #urlbar {
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 #urlbar[focused] {
@@ -196,14 +197,14 @@ menupopup,
 .panel-arrowcontent {
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
   box-shadow: none !important;
 }
 
 menu,
 menuitem {
   color: var(--text) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 menu:hover,
@@ -214,7 +215,7 @@ menuitem:hover {
 
 /* Buttons */
 .toolbarbutton-1 {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 .toolbarbutton-1:hover {
@@ -232,7 +233,7 @@ scrollbar {
 
 scrollbar thumb {
   background: var(--border) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 scrollbar thumb:hover {
@@ -249,7 +250,7 @@ scrollbar thumb:hover {
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
   color: var(--text) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 /* Tooltip */
@@ -257,7 +258,7 @@ scrollbar thumb:hover {
   background: var(--surface) !important;
   color: var(--text) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
   box-shadow: none !important;
 }
 
@@ -268,14 +269,14 @@ scrollbar thumb:hover {
 
 /* Zen workspaces */
 .zen-workspace-indicator {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
 .zen-workspace-tab {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }
 
-/* Remove rounded corners from all XUL elements */
+/* Rounded corners on all XUL elements */
 xul|* {
-  border-radius: 0 !important;
+  border-radius: var(--dp-radius) !important;
 }

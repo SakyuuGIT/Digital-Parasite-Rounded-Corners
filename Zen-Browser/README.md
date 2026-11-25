@@ -1,9 +1,9 @@
-# Zen Browser — Digital Parasite Theme (square reference)
+# Zen Browser — Digital Parasite Theme (rounded corner variant)
 
-A Zen Browser theme (Firefox-based) using the Digital Parasite palette. All UI elements are **square** (no rounded corners) for a sharp cyberpunk look — inspired by system24's unrounding.
+A Zen Browser theme (Firefox-based) using the Digital Parasite palette. All UI elements use **rounded corners** (12px, driven by `--dp-radius`) to match the YASB Okinami / rounded-corner setup.
 
-> This is the **square reference** variant. The rounded-corner variant of this setup uses Helium
-> (Chromium) or Zen's default rounding instead.
+> This is the **rounded corner** variant. The **square** variant lives in the main
+> `My-Digital-Parasite-Setup` repository.
 
 ## Installation
 
@@ -34,7 +34,7 @@ If you already have a `userChrome.css` (e.g., from Rose Pine), back it up first,
 - Dark cyberpunk background
 - Rose and green neon accents
 - Cyan links
-- **All UI elements are square** (tabs, urlbar, buttons, menus, scrollbars, tooltips)
+- **All UI elements are rounded** (12px via `--dp-radius`: tabs, urlbar, buttons, menus, scrollbars, tooltips)
 - Custom scrollbars, buttons, inputs, tooltips
 - Styled sidebar and toolbar
 - Tab selection indicator (rose bottom border)

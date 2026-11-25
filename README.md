@@ -22,7 +22,7 @@ with rounded corners everywhere (radii inspired by
 | 📟 [YASB (Okinami)](./YASB) | Okinami-based YASB bar (active) | `config.yaml` + `styles.css` — [Source: MrDLingters/Okinami_YASB](https://github.com/MrDLingters/Okinami_YASB) |
 | 🤖 [Hermes](./Hermes) | Hermes Agent skin (rounded) | `digital-parasite-rounded.yaml` |
 | 🌐 [Chrome / Edge](./Chrome) | Browser theme (Manifest V3) | `manifest.json` |
-| 🦊 [Zen Browser](./Zen-Browser) | Zen Browser theme (square reference) | `digital-parasite.css` |
+| 🦊 [Zen Browser](./Zen-Browser) | Zen Browser theme (rounded corners) | `digital-parasite.css` |
 | 🦊 [Firefox](./Firefox) | Firefox theme (rounded corners) | `manifest.json`, `userChrome.css` |
 | 🌙 [Dark Reader](./Dark-Reader) | Dark Reader settings (JSON) | `digital-parasite-darkreader.json` |
 | 📓 [Obsidian](./Obsidian) | Obsidian theme (Cyberpunk-based, rounded) | `DigitalParasiteRoundedCorner/theme.css` |
