@@ -23,6 +23,7 @@ with rounded corners everywhere (radii inspired by
 | 🤖 [Hermes](./Hermes) | Hermes Agent skin (rounded) | `digital-parasite-rounded.yaml` |
 | 🌐 [Chrome / Edge](./Chrome) | Browser theme (Manifest V3) | `manifest.json` |
 | 🦊 [Zen Browser](./Zen-Browser) | Zen Browser theme (square reference) | `digital-parasite.css` |
+| 🦊 [Firefox](./Firefox) | Firefox theme (rounded corners) | `manifest.json`, `userChrome.css` |
 | 🌙 [Dark Reader](./Dark-Reader) | Dark Reader settings (JSON) | `digital-parasite-darkreader.json` |
 | 📓 [Obsidian](./Obsidian) | Obsidian theme (Cyberpunk-based, rounded) | `DigitalParasiteRoundedCorner/theme.css` |
 | 🖼️ [Wallpaper](./Wallpaper) | Digital Parasite wallpapers | `Capri wallpaper.jpg` |
@@ -70,6 +71,7 @@ Some themes load stylesheets or other resources from their upstream projects, so
 - **Obsidian Cyberpunk theme:** [nxxxsooo/obsidian-cyberpunk-theme](https://github.com/nxxxsooo/obsidian-cyberpunk-theme)
 - **Chrome / Edge:** Browser theme via Manifest V3 theme API.
 - **Zen Browser:** Browser theme via userChrome.css.
+- **Firefox:** WebExtension theme + userChrome.css (rounded corners).
 - **Visual Studio Code:** [Official website](https://code.visualstudio.com/)
 - **Font Wizard:** [karnyadavdev/FontWizard](https://github.com/karnyadavdev/FontWizard) — system font manager
 - **JetBrains Mono Nerd Font:** [JetBrains](https://github.com/JetBrains/JetBrainsMono) + [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
