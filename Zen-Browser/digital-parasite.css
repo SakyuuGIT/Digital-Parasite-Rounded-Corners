@@ -310,3 +310,20 @@ menu:hover, menuitem:hover { background: var(--overlay) !important; color: var(-
   --border-radius-medium: var(--dp-radius) !important;
   --border-radius-small: var(--dp-radius) !important;
 }
+
+
+/* Keep essential tab icons square — only the surrounding shapes are rounded. */
+#navigator-toolbox .zen-essentials-container :is(
+  .toolbarbutton-icon, .tab-icon-image, .tab-icon-stack, .tab-icon-overlay,
+  .tab-icon-sound, .tab-audio-button, .tab-throbber, .tab-icon-pending
+),
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"] :is(
+  .toolbarbutton-icon, .tab-icon-image, .tab-icon-stack, .tab-icon-overlay,
+  .tab-icon-sound, .tab-audio-button, .tab-throbber, .tab-icon-pending
+),
+#zen-sidebar-top-buttons .zen-essentials-container :is(
+  .toolbarbutton-icon, .tab-icon-image, .tab-icon-stack, .tab-icon-overlay
+) {
+  border-radius: 0 !important;
+  corner-shape: none !important;
+}
