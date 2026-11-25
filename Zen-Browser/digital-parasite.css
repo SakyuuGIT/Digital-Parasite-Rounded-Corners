@@ -284,3 +284,29 @@ scrollbar thumb:hover { background: var(--muted) !important; }
 .toolbarbutton-1:hover { background: var(--overlay) !important; }
 .toolbarbutton-1:active { background: var(--highlightMed) !important; }
 menu:hover, menuitem:hover { background: var(--overlay) !important; color: var(--rose) !important; }
+
+
+/* Essentials: inner shapes must use the SAME radius as the outer container.
+   The broad `#navigator-toolbox *` pass above uses the small radius and its ID
+   specificity wins, so re-assert with ID-level specificity here. */
+#navigator-toolbox .zen-essentials-container,
+#navigator-toolbox .zen-essentials-container *,
+#navigator-toolbox .zen-essentials-container *::before,
+#navigator-toolbox .zen-essentials-container *::after,
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"],
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"] *,
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"] *::before,
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"] *::after,
+#zen-sidebar-top-buttons .zen-essentials-container *,
+#zen-sidebar-top-buttons .tabbrowser-tab[zen-essential="true"] * {
+  border-radius: var(--dp-radius) !important;
+  corner-shape: round !important;
+}
+
+#navigator-toolbox .zen-essentials-container toolbarbutton,
+#navigator-toolbox .tabbrowser-tab[zen-essential="true"] {
+  --toolbarbutton-border-radius: var(--dp-radius) !important;
+  --tab-border-radius: var(--dp-radius) !important;
+  --border-radius-medium: var(--dp-radius) !important;
+  --border-radius-small: var(--dp-radius) !important;
+}
